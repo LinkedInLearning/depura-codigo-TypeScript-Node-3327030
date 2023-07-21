@@ -1,8 +1,7 @@
 import { Request, Response, NextFunction } from 'express';
-import axios, { AxiosResponse } from 'axios';
 import PeliculaDB from '../db/models/pelicula.model'
 import PeliculaDBRepositorio from '../db/repositorio/pelicula.repository';
-import { Pelicula } from '../comun/tipos';
+import { Pelicula, esPelicula } from '../comun/tipos';
 
 const obtenerPeliculas = async (req: Request, res: Response, next: NextFunction) => {
     const titulo = req.params.titulo;
@@ -63,6 +62,13 @@ const agregarPelicula = async (req: Request, res: Response, next: NextFunction) 
         poster: req.body.poster,
         clasificacion: req.body.clasificacion,
     };
+
+    if(!esPelicula(params)){
+        return res.status(400).json({
+            message: 'los parámetros no son válidos para agregar una película'
+        });
+    }
+    
     PeliculaDBRepositorio.guardar(params).then((pelicula) => {
         return res.status(200).json({
             pelicula
