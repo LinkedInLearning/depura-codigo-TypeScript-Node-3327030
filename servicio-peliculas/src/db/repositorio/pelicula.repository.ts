@@ -16,7 +16,7 @@ class PeliculaDBRepositorio implements IPeliculaDBRepositorio {
     guardar(pelicula: Omit<Pelicula, 'id'>): Promise<PeliculaDB> {
         return new Promise((resolve, reject) => {
             connection.query<OkPacket>(
-              "INSERT INTO Pelicula (titulo, descripcion, idioma, trama, pais, generos, anio_estreno, poster, clasificacion) VALUES(?,?,?,?,?,?,?,?,?)",
+              "INSERT INTO Pelicula (titulo, descripcion, idioma, trama, pais, generos, anio_estreno, poster, clasificacion) VALUES(?,?,?,?,?,?,?)",
               [pelicula.titulo, pelicula.descripcion, pelicula.idioma, pelicula.trama, pelicula.pais, pelicula.generos, pelicula.anio_estreno, pelicula.poster, pelicula.clasificacion],
               (err, res) => {
                 if (err) reject(err);
@@ -49,7 +49,7 @@ obtenerTodas(parametrosBusqueda: {titulo?: string}): Promise<PeliculaDB[]> {
 obtenerPorId(peliculaId: number): Promise<PeliculaDB> {
     return new Promise((resolve, reject) => {
         connection.query<PeliculaDB[]>(
-          "SELECT * FROM Pelicula WHERE idPelicula = ?",
+          "SELECT * FROM Pelicula WHERE id = ?",
           [peliculaId],
           (err, res) => {
             if (err) reject(err);
@@ -62,7 +62,7 @@ actualizar(pelicula: Pelicula): Promise<number> {
     return new Promise((resolve, reject) => {
         connection.query<OkPacket>(
           "UPDATE Pelicula SET titulo = ?, descripcion = ?, idioma = ?, trama = ?, pais = ?, generos = ?, anio_estreno = ?, poster = ?, clasificacion = ? WHERE idPelicula = ?",
-          [pelicula.titulo, pelicula.descripcion, pelicula.idioma, pelicula.trama, pelicula.pais, pelicula.generos, pelicula.anio_estreno, pelicula.poster, pelicula.clasificacion, pelicula.id],
+          [pelicula.titulo, pelicula.descripcion, pelicula.idioma, pelicula.trama, pelicula.pais, pelicula.generos, pelicula.anio_estreno, pelicula.poster, pelicula.clasificacion],
           (err, res) => {
             if (err) reject(err);
             else resolve(res.affectedRows);
