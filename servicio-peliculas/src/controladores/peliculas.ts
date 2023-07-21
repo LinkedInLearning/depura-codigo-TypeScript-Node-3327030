@@ -62,12 +62,6 @@ const agregarPelicula = async (req: Request, res: Response, next: NextFunction) 
         poster: req.body.poster,
         clasificacion: req.body.clasificacion,
     };
-
-    if(!esPelicula(params)){
-        return res.status(400).json({
-            message: 'los parámetros no son válidos para agregar una película'
-        });
-    }
     
     PeliculaDBRepositorio.guardar(params).then((pelicula) => {
         return res.status(200).json({
