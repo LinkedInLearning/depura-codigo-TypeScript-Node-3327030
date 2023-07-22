@@ -10,19 +10,21 @@ Potencia tus habilidades de depuración en aplicaciones de Node.js con TypeScrip
 
 ## Instrucciones
 
-Este repositorio tiene ramas (branches) para cada uno de los vídeos del curso. Puedes usar el menú emergente de la rama en GitHub para cambiar a una rama específica y echar un vistazo al curso en esa etapa, o puedes añadir `/tree/nombre_de_la_rama` a la URL para ir a la rama a la que quieres acceder.
-
-## Ramas
-
-Las ramas están estructuradas para corresponder a los vídeos del curso. La convención de nomenclatura es Capítulo#_Vídeo#. Por ejemplo, la rama denominada `02_03` corresponde al segundo capítulo y al tercer vídeo de ese capítulo. Algunas ramas tendrán un estado inicial y otro final. Están marcadas con las letras i («inicio») y f («fin»). La branch i tiene el mismo código que al principio del vídeo. La branch f tiene el mismo código que al final del vídeo. La rama master tiene el estado final del código que aparece en el curso.
+Este repositorio contiene una aplicación JavaScript. En el repositorio se encuentran dos ramas:
+- La rama `desafio` contiene el código de la aplicación con los problemas a resolver.
+- La rama `solucion` contiene el código con la aplicación.
 
 ## Instalación
 
-1. Para utilizar estos archivos de ejercicios, debes tener descargado lo siguiente:
-   - [software]
-
-2. Clona este repositorio en tu máquina local usando la Terminal (macOS) o CMD (Windows), o una herramienta GUI como SourceTree.
-3. [Instrucciones específicas del curso].
+1. Instala [Node.js y NPM](https://nodejs.org/en/download)
+2. Instala y configura una base de datos [MySQL](https://www.mysql.com/downloads/) en tu computadora
+3. Utiliza el archivo `peliculas - peliculas.sql` para crear la tabla `peliculas` dentro de la base de datos que hayas creado
+4. Para utilizar estos archivos de ejercicios, necesitas un editor de código. [VS Code](https://code.visualstudio.com/) es recomendado.
+5. Clona este repositorio en tu máquina local usando la Terminal (macOS) o CMD (Windows), o una herramienta GUI como SourceTree.
+6. Desde la terminal dirigete a alguna de las ramas y entra a la carpeta `servicio-peliculas` que contiene el código de la aplicación.
+7. Modifica el archivo `src/config/db.config.ts` y agrega los datos de tu servidor MySQL
+8. Ejecuta el comando `npm install` para instalar las dependencias
+9. Ejecuta el comando `npm run dev` para correr la aplicación
 
 ### Docente
 
