@@ -34,6 +34,6 @@ Echa un vistazo a mis otros cursos en [LinkedIn Learning](https://www.linkedin.c
 
 [0]: # (Replace these placeholder URLs with actual course URLs)
 [lil-course-url]: https://www.linkedin.com/learning/depura-el-codigo-typescript-con-node/errores-en-typescript-con-node
-[lil-thumbnail-url]: https://media.licdn.com/dms/image/D560DAQEudff55osNRg/learning-public-crop_675_1200/0/1694499498800?e=1695798000&v=beta&t=d9hk6tcE6NyJd-jTPjpW9bKprW0l23f3ndUKE7-CG7M
+[lil-thumbnail-url]: https://media.licdn.com/dms/image/D560DAQEudff55osNRg/learning-public-crop_675_1200/0/1694499498800?e=1697122800&v=beta&t=z_-RuS8aDkK21Jq8-gkUqQ5hZk8b2Qa0iKlD3S4MCCQ
 
 [1]: # (End of ES-Instruction ###############################################################################################)
