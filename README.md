@@ -1,6 +1,6 @@
 # Depura el código: TypeScript con Node
 
-Este es el repositorio del curso de LinkedIn Learning `[nombre del curso]`. El curso completo está disponible en [LinkedIn Learning][lil-course-url].
+Este es el repositorio del curso de LinkedIn Learning `Depura el código: TypeScript con Node`. El curso completo está disponible en [LinkedIn Learning][lil-course-url].
 
 ![Nombre completo del curso][lil-thumbnail-url] 
 
@@ -33,7 +33,7 @@ Este repositorio contiene una aplicación JavaScript. En el repositorio se encue
 Echa un vistazo a mis otros cursos en [LinkedIn Learning](https://www.linkedin.com/learning/instructors/natalia-corea).
 
 [0]: # (Replace these placeholder URLs with actual course URLs)
-[lil-course-url]: https://www.linkedin.com
-[lil-thumbnail-url]: https:
+[lil-course-url]: https://www.linkedin.com/learning/depura-el-codigo-typescript-con-node/errores-en-typescript-con-node
+[lil-thumbnail-url]: https://media.licdn.com/dms/image/D560DAQEudff55osNRg/learning-public-crop_675_1200/0/1694499498800?e=1697122800&v=beta&t=z_-RuS8aDkK21Jq8-gkUqQ5hZk8b2Qa0iKlD3S4MCCQ
 
 [1]: # (End of ES-Instruction ###############################################################################################)
